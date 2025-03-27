@@ -8,18 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="InventarioFinal 1.ps1" />
     <None Remove="InventarioFinal.ps1" />
     <None Remove="private.key" />
-    <None Remove="Resources\public.key" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Management" Version="9.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\public.key" />
   </ItemGroup>
 
 </Project>
